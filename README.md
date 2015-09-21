@@ -100,3 +100,23 @@ $ postcss --use autoprefixer --use postcss-import css/app.css --output bundle/ap
 - Update the [Makefile](https://github.com/j1wu/sikeio-ilovereact/blob/bf98375b6d30878b9cb4cfd67e205fd98da1e7b0/Makefile)
 	- Added `--watch` option to postcss, so it rebuilds css/app.css whenver you make changes
 	- Added bundle/app.css to `--files`, so BrowserSync reloads whenever we rebuild
+
+
+# What Is Responsive Design?
+
+## The key idea 
+
+- **The key idea behind this responsive design strategy is "centering"**
+
+## Responsive design methods 
+
+- [Responsive grid](http://www.responsivegridsystem.com/)
+	- As the size of the window changes, the width of the grid columns changes, resizing the items in the grid
+	- There is usually a maximum width to prevent the columns from getting too wide
+	- On mobile though, the screen is not wide enough for multiple columns, so the grid system degenerates to one single column, and everything is stacked vertically
+	- **A responsive grid design is suitable for information-rich pages**
+
+- Full page design
+	- Each page fill the entire screen
+	- These pages usually have very little content in them
+	- **Full page design is frequently used in mobile apps for user onboarding flow**
